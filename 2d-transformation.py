@@ -29,6 +29,7 @@ def scaling(x1,y1,x2,y2,sx,sy):
     pygame.draw.line(screen, BLACK, (x1, y1), (x2, y2), 5)
 
 def rotation(x1,y1,x2,y2,angle):
+    angle=30
     angle = math.radians(angle)
     x1_new = x1*math.cos(angle) - y1*math.sin(angle)
     y1_new = x1*math.sin(angle) + y1*math.cos(angle)
